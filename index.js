@@ -6,7 +6,7 @@
         return factory(global.projectJSONCombiner = {});
     }
 })(typeof window !== "undefined" ? window : this, function(exports) {
-    var mixinDeep = require('mixin-deep');
+    var mixinDeep = require('./mixin-deep.js') || mixinDeep;
 
     function combineProjectJSON(configPath, fs, callback) {
         var reProjectJSON = /project(\.\w+)?\.json/;

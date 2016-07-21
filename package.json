@@ -21,7 +21,4 @@
     "url": "https://github.com/smartface/project-json-combiner/issues"
   },
   "homepage": "https://github.com/smartface/project-json-combiner#readme",
-  "dependencies": {
-    "mixin-deep": "^1.1.3"
-  }
 }
