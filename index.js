@@ -3,7 +3,7 @@
         factory(module.exports);
     }
     else {
-        factory(global, true);
+        return factory(global.projectJSONCombiner = {});
     }
 })(typeof window !== "undefined" ? window : this, function(exports) {
     var mixinDeep = require('mixin-deep');
