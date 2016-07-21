@@ -144,8 +144,8 @@
     exports.getProjectJSON = getProjectJSON;
 
     function getPath(base, file) {
-        if (typeof module === "object")
-            return file;
+        /*if (typeof module === "object")
+            return file;*/
         return base + "/" + file;
     }
 
