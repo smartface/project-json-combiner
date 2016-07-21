@@ -1,6 +1,6 @@
 {
   "name": "project-json-combiner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Combines project.json in smartface workspace environment",
   "main": "index.js",
   "scripts": {
