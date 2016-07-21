@@ -1,0 +1,27 @@
+{
+  "name": "project-json-combiner",
+  "version": "1.0.0",
+  "description": "Combines project.json in smartface workspace environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartface/project-json-combiner.git"
+  },
+  "keywords": [
+    "Smartface",
+    "CLI",
+    "project.json"
+  ],
+  "author": "Smartface, Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smartface/project-json-combiner/issues"
+  },
+  "homepage": "https://github.com/smartface/project-json-combiner#readme",
+  "dependencies": {
+    "mixin-deep": "^1.1.3"
+  }
+}
