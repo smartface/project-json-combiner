@@ -1,3 +1,4 @@
+/*globals mixinDeep*/
 (function(global, factory) {
     if (typeof module === "object" && typeof module.exports === "object") {
         factory(module.exports);
@@ -6,7 +7,7 @@
         return factory(global.projectJSONCombiner = {});
     }
 })(typeof window !== "undefined" ? window : this, function(exports) {
-    var mixinDeep = require('./mixin-deep.js') || mixinDeep;
+    var mixin = require('./mixin-deep.js') || mixinDeep;
 
     function combineProjectJSON(configPath, fs, callback) {
         var reProjectJSON = /project(\.\w+)?\.json/;
@@ -55,7 +56,7 @@
                         cb(ex);
                         return;
                     }
-                    projectJSON = mixinDeep(projectJSON, obj);
+                    projectJSON = mixin(projectJSON, obj);
                     readNextFile(cb);
                 });
             }
