@@ -77,7 +77,7 @@
                     name = name.name;
                 reProjectJSON.lastIndex = 0;
                 reProjectJSON.test((name)) && projectJSONFiles.push(
-                    getPath(name));
+                    getPath(configPath, name));
             });
 
             var projectJSON = {};
