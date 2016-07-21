@@ -24,7 +24,7 @@ var projectJSONCombiner = require("project-json-combiner");
 
 ```javascript
 var fs = require("fs");
-projectJSONCombiner.getProjectJSON("./", fs function(err, projectJSON){
+projectJSONCombiner.getProjectJSON("./", fs, function(err, projectJSON){
   // handle error if any
   console.log(projectJSON.info.name);
 }) ;
