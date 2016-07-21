@@ -4,7 +4,9 @@
         factory(module.exports);
     }
     else {
-        return factory(global.mixinDeep = {});
+        var module = {exports :{}};
+        factory(module);
+        return global.mixinDeep = module.exports;
     }
 })(typeof window !== "undefined" ? window : this, function(exports) {
     'use strict';
@@ -67,5 +69,5 @@
      * Expose `mixinDeep`
      */
 
-    exports = mixinDeep;
+    module.exports = mixinDeep;
 });
