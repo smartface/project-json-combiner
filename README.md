@@ -16,7 +16,7 @@ var projectJSONCombiner = require("project-json-combiner");
 
 ## Rules
 - fs object must be passed
-- Scans folder recursivly
+- Scans folder non-recursivly
 - File names are case sensitive "_project**.\<anySingleWord\>**.json_"
 - It has built in caching mechanisim
 

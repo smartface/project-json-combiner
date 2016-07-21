@@ -76,7 +76,8 @@
                 if (typeof name !== "string")
                     name = name.name;
                 reProjectJSON.lastIndex = 0;
-                reProjectJSON.test((name)) && projectJSONFiles.push(name);
+                reProjectJSON.test((name)) && projectJSONFiles.push(
+                    getPath(name));
             });
 
             var projectJSON = {};
@@ -141,4 +142,11 @@
 
     exports.cache = cache;
     exports.getProjectJSON = getProjectJSON;
+
+    function getPath(base, file) {
+        if (typeof module === "object")
+            return file;
+        return base + "/" + file;
+    }
+
 });
